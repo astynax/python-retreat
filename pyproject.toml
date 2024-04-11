@@ -1,0 +1,27 @@
+[project]
+name = "python-retreat"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "astynax", email = "astynax@users.noreply.github.com" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+classifiers = ["Private :: Do Not Upload"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "mypy>=1.9.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/python_retreat"]
