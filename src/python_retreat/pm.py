@@ -34,7 +34,6 @@ def is_vertical(shape: Shape | dict) -> Any:
     return False
 
 
-
 class C:
     __match_args__ = ('x',)
 
@@ -52,8 +51,8 @@ def x_of_c():
 
 if __name__ == '__main__':
     for x in (
-        Line(Point(10, 10), Point(10, 100)),
-        {"shape": "line", "start": Point(10, 10), "end": Point(10, 100)}
+            Line(Point(10, 10), Point(10, 100)),
+            {"shape": "line", "start": Point(10, 10), "end": Point(10, 100)}
     ):
         print(f'is_vertical({x!r}) => {is_vertical(x)}')
 
